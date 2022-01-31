@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/sti-sally-therese-sofia.iml" filepath="$PROJECT_DIR$/.idea/sti-sally-therese-sofia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-sally-therese-sofia-domain/sti-sally-therese-sofia-domain.iml" filepath="$PROJECT_DIR$/sti-sally-therese-sofia-domain/sti-sally-therese-sofia-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-sally-therese-sofia-service/sti-sally-therese-sofia-service.iml" filepath="$PROJECT_DIR$/sti-sally-therese-sofia-service/sti-sally-therese-sofia-service.iml" />
     </modules>
   </component>
 </project>
