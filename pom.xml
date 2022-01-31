@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
 
     <properties>
+        <project.version>1.0-SNAPSHOT</project.version>
+
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
 
@@ -28,12 +30,10 @@
         <junit.version>4.13.1</junit.version>
         <mysql.version>8.0.28</mysql.version>
         <spring.version>5.3.13</spring.version>
-
     </properties>
 
     <dependencyManagement>
         <dependencies>
-
             <!-- projects -->
 
 
@@ -128,9 +128,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven.jar.plugin.version}</version>
-                    <configuration>
+                   <!-- <configuration>
                         <outputDirectory>/out</outputDirectory>
-                    </configuration>
+                    </configuration>-->
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
