@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sti-sally-therese-sofia-domain" />
+        <module name="sti-sally-therese-sofia-service-impl" />
         <module name="sti-sally-therese-sofia-service" />
+        <module name="sti-sally-therese-sofia-service-unittest" />
+        <module name="sti-sally-therese-sofia-domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sti-sally-therese-sofia" target="8" />
       <module name="sti-sally-therese-sofia-domain" target="1.8" />
       <module name="sti-sally-therese-sofia-service" target="1.8" />
+      <module name="sti-sally-therese-sofia-service-impl" target="1.8" />
+      <module name="sti-sally-therese-sofia-service-unittest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

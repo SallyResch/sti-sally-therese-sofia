@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/sti-sally-therese-sofia.iml" filepath="$PROJECT_DIR$/.idea/sti-sally-therese-sofia.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti-sally-therese-sofia-domain/sti-sally-therese-sofia-domain.iml" filepath="$PROJECT_DIR$/sti-sally-therese-sofia-domain/sti-sally-therese-sofia-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti-sally-therese-sofia-service/sti-sally-therese-sofia-service.iml" filepath="$PROJECT_DIR$/sti-sally-therese-sofia-service/sti-sally-therese-sofia-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-sally-therese-sofia-service-impl/sti-sally-therese-sofia-service-impl.iml" filepath="$PROJECT_DIR$/sti-sally-therese-sofia-service-impl/sti-sally-therese-sofia-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sti-sally-therese-sofia-service-unittest/sti-sally-therese-sofia-service-unittest.iml" filepath="$PROJECT_DIR$/sti-sally-therese-sofia-service-unittest/sti-sally-therese-sofia-service-unittest.iml" />
     </modules>
   </component>
 </project>
