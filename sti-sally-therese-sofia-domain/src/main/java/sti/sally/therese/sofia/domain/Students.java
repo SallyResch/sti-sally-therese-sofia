@@ -14,4 +14,35 @@ public class Students {
 
     }
 
+    public String getGivenName() {
+        return givenName;
+    }
+
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public int getPersNumber() {
+        return persNumber;
+    }
+
+    public void setPersNumber(int persNumber) {
+        this.persNumber = persNumber;
+    }
+
+    public int getCourses() {
+        return courses;
+    }
+
+    public void setCourses(int courses) {
+        this.courses = courses;
+    }
 }
