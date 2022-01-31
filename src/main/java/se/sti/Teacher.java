@@ -1,4 +1,4 @@
-package sti.se;
+package se.sti;
 
 public class Teacher {
 }
