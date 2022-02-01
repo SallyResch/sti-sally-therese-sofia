@@ -13,6 +13,14 @@
     <artifactId>sti-sally-therese-sofia-service-impl</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-sally-therese-sofia-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 
 </project>

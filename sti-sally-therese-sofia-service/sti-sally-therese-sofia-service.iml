@@ -10,5 +10,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sti-sally-therese-sofia-domain" />
+    <orderEntry type="module" module-name="sti-sally-therese-sofia-domain" />
   </component>
 </module>
