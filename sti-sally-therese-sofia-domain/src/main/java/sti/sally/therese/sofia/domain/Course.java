@@ -1,12 +1,12 @@
 package sti.sally.therese.sofia.domain;
 
-public class Courses {
+public class Course {
 private int yhPoints;
 private int courseCode;
 private String teacher;
 private int hours;
 
-    public Courses(int yhPoints, int courseCode, String teacher, int hours) {
+    public Course(int yhPoints, int courseCode, String teacher, int hours) {
         this.yhPoints = yhPoints;
         this.courseCode = courseCode;
         this.teacher = teacher;

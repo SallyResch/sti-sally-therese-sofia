@@ -1,4 +1,4 @@
-package sti.sally.therese.sofia.domain;
+package sti.sally.therese.sofia.service;
 
 import java.util.Scanner;
 

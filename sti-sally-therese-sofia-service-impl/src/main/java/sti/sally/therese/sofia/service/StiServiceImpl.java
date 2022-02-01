@@ -2,8 +2,8 @@ package sti.sally.therese.sofia.service;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
-import sti.sally.therese.sofia.domain.Courses;
-import sti.sally.therese.sofia.domain.Students;
+import sti.sally.therese.sofia.domain.Course;
+import sti.sally.therese.sofia.domain.Student;
 import sti.sally.therese.sofia.domain.Teacher;
 
 public class StiServiceImpl implements StiService {
@@ -12,7 +12,7 @@ public class StiServiceImpl implements StiService {
 
 
     @Override
-    public Students createStudent(String givenName, String surName, int courses) {
+    public Student createStudent(String givenName, String surName, int courses) {
         LOGGER.trace("created student successfully");
         return null /* eller att det händer något annat? */;
     }
@@ -23,7 +23,7 @@ public class StiServiceImpl implements StiService {
     }
 
     @Override
-    public Courses createCourse(int yhPoints, int courseCode, String teacher, int hours) {
+    public Course createCourse(int yhPoints, int courseCode, String teacher, int hours) {
         return null /* eller att det händer något annat? */;
     }
 }
