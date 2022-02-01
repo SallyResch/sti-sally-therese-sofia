@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Student {
     private String givenName;
     private String surName;
-    private long persNumber;
+    private int persNumber;
     ArrayList<Course> coursesList;
 
-    public Student(String givenName, String surName, long persNumber, ArrayList<Course> coursesList){
+    public Student(String givenName, String surName, int persNumber, ArrayList<Course> coursesList){
         this.givenName = givenName;
         this.surName = surName;
         this.persNumber = persNumber;
@@ -36,7 +36,7 @@ public class Student {
         return persNumber;
     }
 
-    public void setPersNumber(long persNumber) {
+    public void setPersNumber(int persNumber) {
         this.persNumber = persNumber;
     }
 

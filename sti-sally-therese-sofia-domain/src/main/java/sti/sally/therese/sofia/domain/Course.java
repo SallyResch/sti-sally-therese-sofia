@@ -3,14 +3,16 @@ package sti.sally.therese.sofia.domain;
 public class Course {
 private int yhPoints;
 private int courseCode;
-private String teacher;
+private Teacher teacher;
 private int hours;
+private String courseName;
 
-    public Course(int yhPoints, int courseCode, String teacher, int hours) {
+    public Course(int yhPoints, int courseCode, Teacher teacher, int hours, String courseName) {
         this.yhPoints = yhPoints;
         this.courseCode = courseCode;
         this.teacher = teacher;
         this.hours = hours;
+        this.courseName = courseName;
     }
 
     public int getYhPoints() {
@@ -29,11 +31,11 @@ private int hours;
         this.courseCode = courseCode;
     }
 
-    public String getTeacher() {
+    public Teacher getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(String teacher) {
+    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 
@@ -45,4 +47,11 @@ private int hours;
         this.hours = hours;
     }
 
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
 }
