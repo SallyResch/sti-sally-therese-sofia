@@ -13,7 +13,6 @@ public class Student {
         this.surName = surName;
         this.persNumber = persNumber;
         this.coursesList = coursesList;
-
     }
 
     public String getGivenName() {
