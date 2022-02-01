@@ -7,10 +7,10 @@ import sti.sally.therese.sofia.domain.Teacher;
 import java.util.logging.Logger;
 
 public interface StiService {
-    //attribut
-    Logger logger();
-    Students student(String givenName, String surName, int persNumber, int courses);
-    Teacher teacher(String givenName, String surName, int persNummer, int salaryPerHour);
-    Courses course(int yhPoints, int courseCode, String teacher, int hours);
+    //Logger logger();
+    Students createStudent(String givenName, String surName, int courses);
+    Teacher createTeacher(String givenName, String surName, int persNummer, int salaryPerHour);
+    Courses createCourse(int yhPoints, int courseCode, String teacher, int hours);
 
 }
+/*int persNumber,*/

@@ -46,3 +46,4 @@ public class Students {
         this.courses = courses;
     }
 }
+/* Student ska kunna hämtas via personnummer och ska då hämta förnamn, efternamn, kursnamn*/
