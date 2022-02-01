@@ -32,10 +32,36 @@
         <spring.version>5.3.13</spring.version>
     </properties>
 
+    <modules>
+        <module>sti-sally-therese-sofia-domain</module>
+        <module>sti-sally-therese-sofia-service</module>
+        <module>sti-sally-therese-sofia-service-impl</module>
+        <module>sti-sally-therese-sofia-service-unittest</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <!-- projects -->
-
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-sally-therese-sofia-domain</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-sally-therese-sofia-service</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-sally-therese-sofia-service-impl</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-sally-therese-sofia-service-unittest</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
 
             <!-- jUnit -->
             <dependency>
