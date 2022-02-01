@@ -6,7 +6,7 @@ private int courseCode;
 private String teacher;
 private int hours;
 
-    public Courses(int yhPoints, int courseCode, String teacher, int hours, int nrOfCourses) {
+    public Courses(int yhPoints, int courseCode, String teacher, int hours) {
         this.yhPoints = yhPoints;
         this.courseCode = courseCode;
         this.teacher = teacher;
