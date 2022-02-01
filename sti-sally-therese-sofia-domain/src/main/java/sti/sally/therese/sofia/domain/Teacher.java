@@ -2,10 +2,10 @@ package sti.sally.therese.sofia.domain;
 
 
 public class Teacher {
-    String givenName;
-    String surName;
-    int persNummer;
-    int salaryPerHour;
+    private String givenName;
+    private String surName;
+    private int persNummer;
+    private int salaryPerHour;
     //List of courses
 
 

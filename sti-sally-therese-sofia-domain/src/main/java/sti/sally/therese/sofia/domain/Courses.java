@@ -1,17 +1,16 @@
 package sti.sally.therese.sofia.domain;
 
 public class Courses {
-int yhPoints;
-int courseCode;
-String teacher;
-int hours;
-//int nrOfCourses;
+private int yhPoints;
+private int courseCode;
+private String teacher;
+private int hours;
+
     public Courses(int yhPoints, int courseCode, String teacher, int hours, int nrOfCourses) {
         this.yhPoints = yhPoints;
         this.courseCode = courseCode;
         this.teacher = teacher;
         this.hours = hours;
-        //this.nrOfCourses= nrOfCourses;
     }
 
     public int getYhPoints() {
@@ -46,11 +45,4 @@ int hours;
         this.hours = hours;
     }
 
-    /*public int getNrOfCourses() {
-        return nrOfCourses;
-    }
-
-    public void setNrOfCourses(int nrOfCourses) {
-        this.nrOfCourses = nrOfCourses;
-    }*/
 }

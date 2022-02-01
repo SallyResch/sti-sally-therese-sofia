@@ -5,6 +5,5 @@
                 http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="stiService" class="sti.sally.therese.sofia.service.StiServiceImpl"/>
-    <!-- <bean id="forestService" class="mavenTesting.service.ForestServiceImpl" /> -->
 
 </beans>

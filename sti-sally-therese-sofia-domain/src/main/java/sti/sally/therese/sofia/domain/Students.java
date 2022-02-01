@@ -1,10 +1,10 @@
 package sti.sally.therese.sofia.domain;
 
 public class Students {
-    String givenName;
-    String surName;
-    int persNumber;
-    int courses;
+    private String givenName;
+    private String surName;
+    private int persNumber;
+    private int courses;
 
     public Students(String givenName, String surName, int persNumber, int courses){
         this.givenName = givenName;
