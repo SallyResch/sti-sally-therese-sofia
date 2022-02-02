@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     private StiService service;
-    private static ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:sti-sally-therese-sofia.xml");
+    private static ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:sti-sally-therese-sofia-service.xml");
 
     public Main(StiService service){
         this.service=service;
