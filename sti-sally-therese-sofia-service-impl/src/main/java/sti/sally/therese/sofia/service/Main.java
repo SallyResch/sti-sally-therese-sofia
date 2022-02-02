@@ -3,6 +3,7 @@ package sti.sally.therese.sofia.service;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -15,9 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = (Main) applicationContext.getBean("main");
-        main.service.createStudent("Sally", "Resch", 3, null);
-
-
+        main.service.createStudent("Sally", "Resch", 1583084833);
         //anropa createStudent
 
       /* System.out.println("Vad vill du göra? \n 1.Hämta en student \n 2.Lägga till en Student \n 3.Lägga till/ta bort kurser för Student");

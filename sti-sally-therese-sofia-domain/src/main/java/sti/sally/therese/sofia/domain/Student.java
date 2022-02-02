@@ -14,7 +14,11 @@ public class Student {
         this.persNumber = persNumber;
         this.coursesList = coursesList;
     }
-
+    public Student(String givenName, String surName, int persNumber){
+        this.givenName = givenName;
+        this.surName = surName;
+        this.persNumber = persNumber;
+    }
     public String getGivenName() {
         return givenName;
     }

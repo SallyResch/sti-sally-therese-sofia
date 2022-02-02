@@ -8,7 +8,10 @@ public class Vault {
     static List<Course> allCourses;
     static List<Course> harrysCourses;
     static List<Course> hermionesCourses;
+    static List<Course> ronsCourses;
     static List<Student> allStudents;
+    static List<Teacher> allTeachers;
+
     static Teacher hagrid = new Teacher("Rubeus", "Hagrid", 1133224455, 220);
     static Teacher minerva = new Teacher("Minerva", "McGonagoll", 1010303022, 243);
     static Teacher severus = new Teacher("Severus", "Snape", 139472648, 230);
@@ -28,16 +31,37 @@ public class Vault {
         allCourses = addAllCourses();
         harrysCourses = addHarrysCourses();
         hermionesCourses = addHermionesCourses();
-        List<Course> ronsCourses = addRonsCourses();
+        ronsCourses = addRonsCourses();
         allStudents = addAllStudents();
+        allTeachers = addAllTeachers();
     }
 
     //metoder för att lägga till/ta bort kurser
-    //Student student = vault.addStudent(new Student(givenName,surName,persNummer,coursesList));
+
+    public static ArrayList<Teacher> addAllTeachers(){
+        ArrayList<Teacher> allTeachers = new ArrayList<Teacher>();
+        allTeachers.add(hagrid);
+        allTeachers.add(severus);
+        allTeachers.add(minerva);
+        allTeachers.add(filius);
+        return allTeachers;
+    }
 
     public Student addStudent(Student student){
         allStudents.add(student);
         return student;
+    }
+    public Course addCourse(Course course){
+        allCourses.add(course);
+        return course;
+    }
+    public static void removeCourse(Course course){
+        allCourses.remove(course);
+    }
+
+    public Teacher addTeacher(Teacher teacher){
+        allTeachers.add(teacher);
+        return teacher;
     }
 
     public static ArrayList<Student> addAllStudents() {
@@ -80,5 +104,12 @@ public class Vault {
         ronsCourses.add(kurs2);
         ronsCourses.add(kurs4);
         return ronsCourses;
+    }
+
+    public static ArrayList<Course> addNewStudentCourses() {
+        ArrayList<Course> newStudentCourses = new ArrayList<Course>();
+        //lägg till valfria kurser och valfritt antal kurser
+
+        return newStudentCourses;
     }
 }
