@@ -5,14 +5,21 @@ import com.sun.org.slf4j.internal.LoggerFactory;
 import sti.sally.therese.sofia.domain.Course;
 import sti.sally.therese.sofia.domain.Student;
 import sti.sally.therese.sofia.domain.Teacher;
+import sti.sally.therese.sofia.domain.Vault;
+
+import java.util.ArrayList;
 
 public class StiServiceImpl implements StiService {
 
     private static final Logger LOGGER= LoggerFactory.getLogger(StiServiceImpl.class);
+    private Vault vault;
 
+    public StiServiceImpl(Vault vault) {
+        this.vault = vault;
+    }
 
     @Override
-    public Student createStudent(String givenName, String surName, int courses) {
+    public Student createStudent(String givenName, String surName, int persNummer, ArrayList<Course> coursesList) {
         //vad vill du göra?
         //1 hämta student
             //a (ange personnummer)
@@ -21,9 +28,9 @@ public class StiServiceImpl implements StiService {
             //använd konstruktorn
         //3. lägg till/ta bort kurs
 
-
+        Student student = vault.addStudent(new Student(givenName,surName,persNummer,coursesList));
         LOGGER.trace("created student successfully");
-        return null /* eller att det händer något annat? */;
+        return student; /* eller att det händer något annat? */
     }
 
     @Override

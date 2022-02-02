@@ -12,5 +12,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sti-sally-therese-sofia-domain" />
     <orderEntry type="module" module-name="sti-sally-therese-sofia-service" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.13" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.13" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.13" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.13" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.13" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.13" level="project" />
   </component>
 </module>

@@ -4,6 +4,12 @@
        xsi:schemaLocation="
                 http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="stiService" class="sti.sally.therese.sofia.service.StiServiceImpl"/>
+
+    <bean id="service" class="sti.sally.therese.sofia.service.StiServiceImpl"/>
+
+    <bean id="main" class="sti.sally.therese.sofia.service.Main">
+        <constructor-arg name="service" ref="service"/>
+    </bean>
+
 
 </beans>
