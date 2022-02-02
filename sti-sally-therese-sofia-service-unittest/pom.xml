@@ -14,5 +14,36 @@
     <artifactId>sti-sally-therese-sofia-service-unittest</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+
+        <!-- project -->
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-sally-therese-sofia-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-sally-therese-sofia-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-sally-therese-sofia-service-impl</artifactId>
+        </dependency>
+
+        <!--junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

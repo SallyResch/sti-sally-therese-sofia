@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -16,22 +17,18 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = (Main) applicationContext.getBean("main");
-        main.service.createStudent("Sally", "Resch", 1583084833);
         //anropa createStudent
+        main.service.createStudent("Sally", "Resch", 1583084833);
 
-      /* System.out.println("Vad vill du göra? \n 1.Hämta en student \n 2.Lägga till en Student \n 3.Lägga till/ta bort kurser för Student");
-       Scanner snew = new Scanner(System.in);
-       int val = snew.nextInt();
-       if (val==1){
-           Anropa student personnummer och verifiera
-       }
-       else if (val==2) {
-           skapar input där man skriver in förnamn, efternamn, persNr, kurser den läser
-       }
-       else{
-           Lägga till eller ta bort en kurs för en student
-       }
-        System.out.println("Okej, du heter....")
-    }*/
+        System.out.println("Vilket personnummer har du? (10 siffror tack!)");
+        Scanner s = new Scanner(System.in);
+        try{
+            int persNumber = s.nextInt();
+            main.service.createStudent(persNumber);
+        }catch(InputMismatchException ex){
+            System.out.println("Aj, aj. Det där var inte rätt. Skriv ditt tiosiffriga personnummer, tack!");
+        }
+
+
     }
 }

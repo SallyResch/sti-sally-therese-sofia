@@ -19,6 +19,10 @@ public class Student {
         this.surName = surName;
         this.persNumber = persNumber;
     }
+
+    public Student(int persNumber){
+        this.persNumber = persNumber;
+    }
     public String getGivenName() {
         return givenName;
     }
@@ -49,6 +53,11 @@ public class Student {
 
     public void setCoursesList(ArrayList<Course> coursesList) {
         this.coursesList = coursesList;
+    }
+
+    @Override
+    public String toString(){
+        return "Studenten heter: " + givenName + " " + surName + " och går kurserna: " + coursesList;
     }
 }
 /* Student ska kunna hämtas via personnummer och ska då hämta förnamn, efternamn, kursnamn*/

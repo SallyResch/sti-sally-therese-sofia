@@ -11,5 +11,9 @@
         <constructor-arg name="service" ref="service"/>
     </bean>
 
+    <bean id="student" class="sti.sally.therese.sofia.domain.Student"/>
+
+
+
 
 </beans>

@@ -27,6 +27,7 @@ public class Vault {
     static Student hermione = new Student("Hermione", "Granger", 1345678914, addHermionesCourses());
     static Student ron = new Student("Ron", "Weasley", 1948674673, addRonsCourses());
 
+
     public Vault() {
         allCourses = addAllCourses();
         harrysCourses = addHarrysCourses();
