@@ -8,12 +8,12 @@
     <bean id="service" class="sti.sally.therese.sofia.service.StiServiceImpl"/>
 
     <bean id="main" class="sti.sally.therese.sofia.service.Main">
+        <!--
+
         <constructor-arg name="service" ref="service"/>
+        -->
     </bean>
 
     <bean id="student" class="sti.sally.therese.sofia.domain.Student"/>
-
-
-
 
 </beans>

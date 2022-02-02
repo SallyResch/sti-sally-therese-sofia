@@ -8,18 +8,22 @@ public class Student {
     private int persNumber;
     ArrayList<Course> coursesList;
 
+    //constructor 1
     public Student(String givenName, String surName, int persNumber, ArrayList<Course> coursesList){
         this.givenName = givenName;
         this.surName = surName;
         this.persNumber = persNumber;
         this.coursesList = coursesList;
     }
+
+    //constructor 2
     public Student(String givenName, String surName, int persNumber){
         this.givenName = givenName;
         this.surName = surName;
         this.persNumber = persNumber;
     }
 
+    //constructor 3
     public Student(int persNumber){
         this.persNumber = persNumber;
     }

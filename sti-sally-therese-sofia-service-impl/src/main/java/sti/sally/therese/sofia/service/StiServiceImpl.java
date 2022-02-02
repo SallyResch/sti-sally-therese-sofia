@@ -1,7 +1,7 @@
 package sti.sally.therese.sofia.service;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+//import com.sun.org.slf4j.internal.Logger;
+//import com.sun.org.slf4j.internal.LoggerFactory;
 import sti.sally.therese.sofia.domain.Course;
 import sti.sally.therese.sofia.domain.Student;
 import sti.sally.therese.sofia.domain.Teacher;
@@ -11,8 +11,10 @@ import java.util.ArrayList;
 
 public class StiServiceImpl implements StiService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(StiServiceImpl.class);
+    //private static final Logger LOGGER = LoggerFactory.getLogger(StiServiceImpl.class);
     private Vault vault;
+
+    public StiServiceImpl(){}
 
     public StiServiceImpl(Vault vault) {
         this.vault = vault;
@@ -21,14 +23,14 @@ public class StiServiceImpl implements StiService {
     @Override
     public Student createStudent(String givenName, String surName, int persNummer, ArrayList<Course> coursesList) {
         Student student = vault.addStudent(new Student(givenName, surName, persNummer, coursesList));
-        LOGGER.trace("created student successfully");
+     //   LOGGER.trace("created student successfully");
         return student;
     }
 
     @Override
     public Student createStudent(String givenName, String surName, int persNummer) {
         Student student = vault.addStudent(new Student(givenName, surName, persNummer));
-        LOGGER.trace("created student successfully");
+      //  LOGGER.trace("created student successfully");
         return student;
     }
 
@@ -45,20 +47,20 @@ public class StiServiceImpl implements StiService {
         }
 
         Student student = vault.addStudent(new Student(persNummer));
-        LOGGER.trace("created student successfully");
+       // LOGGER.trace("created student successfully");
         return student; /* eller att det händer något annat? */
     }
 
 
         @Override
         public Teacher createTeacher (String givenName, String surName,int persNummer, int salaryPerHour){
-            LOGGER.trace("created student successfully");
+       //     LOGGER.trace("created student successfully");
             return null /* eller att det händer något annat? */;
         }
 
         @Override
         public Course createCourse ( int yhPoints, int courseCode, String teacher,int hours){
-            LOGGER.trace("created student successfully");
+        //    LOGGER.trace("created student successfully");
             return null /* eller att det händer något annat? */;
         }
 
