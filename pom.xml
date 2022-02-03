@@ -151,7 +151,7 @@
                     <version>${maven.jar.plugin.version}</version>
                    <!-- <configuration>
                         <outputDirectory>/out</outputDirectory>
-                    </configuration>-->
+                    </configuration> -->
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

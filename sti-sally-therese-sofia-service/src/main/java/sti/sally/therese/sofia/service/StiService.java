@@ -11,7 +11,7 @@ public interface StiService {
     Student createStudent(String givenName, String surName, int persNumber, ArrayList<Course> coursesList);
     Student getStudent(int persNumber);
 
-    Course createCourse(int yhPoints, int courseCode, String teacher, int hours);
+    Course createCourse(int yhPoints, int courseCode, Teacher teacher, int hours, String courseName);
     Course removeCourse(Course course);
 
     /*

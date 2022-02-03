@@ -20,6 +20,7 @@ public class Main {
     public static void main(String[] args) {
         Main main = (Main) applicationContext.getBean("main");
         main.service.createStudent("Sally", "Resch", 1583084833,vault.addAllCourses());
+        main.service.createCourse(20,6,vault.teacher4, 160, "Advanced Charms");
 
         System.out.println("Vilket personnummer har du? (10 siffror tack!)");
         Scanner s = new Scanner(System.in);
@@ -29,7 +30,5 @@ public class Main {
         }catch(InputMismatchException ex){
             System.out.println("Aj, aj. Det där var inte rätt. Skriv ditt tiosiffriga personnummer, tack!");
         }
-
-
     }
 }
