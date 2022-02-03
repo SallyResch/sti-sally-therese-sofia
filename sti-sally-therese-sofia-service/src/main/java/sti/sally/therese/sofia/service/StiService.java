@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public interface StiService {
 
     Student createStudent(String givenName, String surName, int persNumber, ArrayList<Course> coursesList);
-    Student getStudent(int persNumber);
+    void getStudent();
 
     Course createCourse(int yhPoints, int courseCode, Teacher teacher, int hours, String courseName);
     Course removeCourse(Course course);
