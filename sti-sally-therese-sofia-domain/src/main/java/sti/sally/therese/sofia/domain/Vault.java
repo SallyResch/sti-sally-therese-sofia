@@ -1,116 +1,50 @@
 package sti.sally.therese.sofia.domain;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Vault {
 
-    static List<Course> allCourses;
-    static List<Course> harrysCourses;
-    static List<Course> hermionesCourses;
-    static List<Course> ronsCourses;
-    static List<Student> allStudents;
-    static List<Teacher> allTeachers;
+    public static ArrayList<Course> allCourses = addAllCourses();
+    public static ArrayList<Student> allStudents =addAllStudents();
+    public static ArrayList<Teacher> allTeachers =addAllTeachers();
 
-    static Teacher hagrid = new Teacher("Rubeus", "Hagrid", 1133224455, 220);
-    static Teacher minerva = new Teacher("Minerva", "McGonagoll", 1010303022, 243);
-    static Teacher severus = new Teacher("Severus", "Snape", 139472648, 230);
-    static Teacher filius = new Teacher("Filius", "Flitwick", 1807462850, 236);
+    public static Teacher teacher1 = new Teacher("Rubeus", "Hagrid", 1133224455, 220);
+    public static Teacher teacher2 = new Teacher("Minerva", "McGonagoll", 1010303022, 243);
+    public static Teacher teacher3 = new Teacher("Severus", "Snape", 139472648, 230);
+    public static Teacher teacher4 = new Teacher("Filius", "Flitwick", 1807462850, 236);
 
-    static Course kurs1 = new Course(25, 1, severus, 200, "Defence against dark arts");
-    static Course kurs2 = new Course(30, 2, minerva, 240, "Transfiguration");
-    static Course kurs3 = new Course(20, 3, severus, 160, "Potions");
-    static Course kurs4 = new Course(25, 4, hagrid, 200, "Care of Magical Creatures");
-    static Course kurs5 = new Course(25, 5, filius, 230, "Charms");
+    public static Course course1 = new Course(25, 1, teacher3, 200, "Defence against dark arts");
+    public static Course course2 = new Course(30, 2, teacher2, 240, "Transfiguration");
+    public static Course course3 = new Course(20, 3, teacher3, 160, "Potions");
+    public static Course course4 = new Course(25, 4, teacher1, 200, "Care of Magical Creatures");
+    public static Course course5 = new Course(25, 5, teacher4, 230, "Charms");
 
-    static Student harry = new Student("Harry", "Potter", 1345678910, addAllCourses());
-    static Student hermione = new Student("Hermione", "Granger", 1345678914, addHermionesCourses());
-    static Student ron = new Student("Ron", "Weasley", 1948674673, addRonsCourses());
-
-
-    public Vault() {
-        allCourses = addAllCourses();
-        harrysCourses = addHarrysCourses();
-        hermionesCourses = addHermionesCourses();
-        ronsCourses = addRonsCourses();
-        allStudents = addAllStudents();
-        allTeachers = addAllTeachers();
-    }
-
-    //metoder för att lägga till/ta bort kurser
+    public static Student student1 = new Student("Harry", "Potter", 1345678910, allCourses);
+    public static Student student2 = new Student("Hermione", "Granger", 1345678914, allCourses);
+    public static Student student3 = new Student("Ron", "Weasley", 1948674673, allCourses);
 
     public static ArrayList<Teacher> addAllTeachers(){
         ArrayList<Teacher> allTeachers = new ArrayList<Teacher>();
-        allTeachers.add(hagrid);
-        allTeachers.add(severus);
-        allTeachers.add(minerva);
-        allTeachers.add(filius);
+        allTeachers.add(teacher1);
+        allTeachers.add(teacher3);
+        allTeachers.add(teacher2);
+        allTeachers.add(teacher4);
         return allTeachers;
     }
-
-    public Student addStudent(Student student){
-        allStudents.add(student);
-        return student;
-    }
-    public Course addCourse(Course course){
-        allCourses.add(course);
-        return course;
-    }
-    public static void removeCourse(Course course){
-        allCourses.remove(course);
-    }
-
-    public Teacher addTeacher(Teacher teacher){
-        allTeachers.add(teacher);
-        return teacher;
-    }
-
     public static ArrayList<Student> addAllStudents() {
         ArrayList<Student> allStudents = new ArrayList<Student>();
-        allStudents.add(harry);
-        allStudents.add(hermione);
-        allStudents.add(ron);
+        allStudents.add(student1);
+        allStudents.add(student2);
+        allStudents.add(student3);
         return allStudents;
-
     }
-
     public static ArrayList<Course> addAllCourses() {
         ArrayList<Course> allCourses = new ArrayList<Course>();
-        allCourses.add(kurs1);
-        allCourses.add(kurs2);
-        allCourses.add(kurs3);
-        allCourses.add(kurs4);
-        allCourses.add(kurs5);
+        allCourses.add(course1);
+        allCourses.add(course2);
+        allCourses.add(course3);
+        allCourses.add(course4);
+        allCourses.add(course5);
         return allCourses;
-    }
-
-    public static ArrayList<Course> addHarrysCourses() {
-        ArrayList<Course> harrysCourses = new ArrayList<>();
-        harrysCourses.add(kurs1);
-        harrysCourses.add(kurs4);
-        return harrysCourses;
-    }
-    public static ArrayList<Course> addHermionesCourses() {
-        ArrayList<Course> hermionesCourses = new ArrayList<Course>();
-        hermionesCourses.add(kurs1);
-        hermionesCourses.add(kurs2);
-        hermionesCourses.add(kurs3);
-        hermionesCourses.add(kurs4);
-        hermionesCourses.add(kurs5);
-        return hermionesCourses;
-    }
-    public static ArrayList<Course> addRonsCourses() {
-        ArrayList<Course> ronsCourses = new ArrayList<Course>();
-        ronsCourses.add(kurs1);
-        ronsCourses.add(kurs2);
-        ronsCourses.add(kurs4);
-        return ronsCourses;
-    }
-
-    public static ArrayList<Course> addNewStudentCourses() {
-        ArrayList<Course> newStudentCourses = new ArrayList<Course>();
-        //lägg till valfria kurser och valfritt antal kurser
-
-        return newStudentCourses;
     }
 }
