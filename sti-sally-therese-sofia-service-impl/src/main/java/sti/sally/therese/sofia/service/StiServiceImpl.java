@@ -60,7 +60,7 @@ public class StiServiceImpl implements StiService {
 
     @Override
     public Course removeCourse (ArrayList<Course> courseList){
-        System.out.println("Vilken kurs vill du ta bort? Ange kurskoden.");
+   /*     System.out.println("Vilken kurs vill du ta bort? Ange kurskoden.");
         Scanner s = new Scanner(System.in);
         try{
             int courseNumber = s.nextInt();
@@ -68,7 +68,7 @@ public class StiServiceImpl implements StiService {
         }catch(InputMismatchException e){
             System.out.println("Aj, aj. Det där var inte rätt. Skriv kurskoden, tack!");
         }
-        course.remove(course2);
+        course.remove(course2);*/
         return null;
     }
 

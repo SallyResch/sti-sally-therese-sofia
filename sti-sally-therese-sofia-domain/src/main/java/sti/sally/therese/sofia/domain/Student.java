@@ -16,6 +16,8 @@ public class Student {
         this.coursesList = coursesList;
     }
 
+    public String getGivenName() {return givenName;}
+
     public void setGivenName(String givenName) {
         this.givenName = givenName;
     }

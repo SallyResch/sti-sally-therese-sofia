@@ -12,7 +12,7 @@ public interface StiService {
     void getStudent();
 
     Course createCourse(int yhPoints, int courseCode, Teacher teacher, int hours, String courseName);
-    Course removeCourse(Course course);
+    Course removeCourse(ArrayList<Course> course);
 
     /*
     Teacher createTeacher(String givenName, String surName, int persNummer, int salaryPerHour);

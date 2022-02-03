@@ -26,7 +26,7 @@ public class Main {
 
         main.service.createCourse(20,6,vault.teacher4, 160, "Advanced Charms");
 
-        main.service.removeCourse(vault.course3);
+        //main.service.removeCourse(vault.course3);
 
     }
 }
