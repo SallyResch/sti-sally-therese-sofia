@@ -59,17 +59,32 @@ public class StiServiceImpl implements StiService {
     }
 
     @Override
-    public Course removeCourse (ArrayList<Course> courseList){
-   /*     System.out.println("Vilken kurs vill du ta bort? Ange kurskoden.");
+    public void removeCourse (ArrayList<Course> courseList){
+       System.out.println("Vilken kurs vill du ta bort? Ange kurskoden.");
         Scanner s = new Scanner(System.in);
         try{
             int courseNumber = s.nextInt();
-            if()
+            if(courseNumber==1){
+                courseList.remove(0);
+                System.out.println("Du tog bort kurs 1!");
+            }else if(courseNumber==2){
+                courseList.remove(1);
+                System.out.println("Du tog bort kurs 2!");
+            }else if(courseNumber==3){
+                courseList.remove(2);
+                System.out.println("Du tog bort kurs 3!");
+            }else if(courseNumber==4){
+                courseList.remove(3);
+                System.out.println("Du tog bort kurs 4!");
+            }else if(courseNumber==5){
+                courseList.remove(4);
+                System.out.println("Du tog bort kurs 5!");
+            }else{
+                System.out.println("Hittade ej kursen...");
+            }
         }catch(InputMismatchException e){
             System.out.println("Aj, aj. Det där var inte rätt. Skriv kurskoden, tack!");
         }
-        course.remove(course2);*/
-        return null;
     }
 
 
