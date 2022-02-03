@@ -7,6 +7,7 @@ public class Student {
     private String surName;
     private int persNumber;
     ArrayList<Course> coursesList;
+    private Vault vault;
 
     //constructor 1
     public Student(String givenName, String surName, int persNumber, ArrayList<Course> coursesList){
@@ -48,6 +49,11 @@ public class Student {
 
     @Override
     public String toString(){
-        return "Studenten heter: " + givenName + " " + surName + " och går kurserna: " + coursesList;
+        Course course1 = vault.course1;
+        Course course2 = vault.course2;
+        Course course3 = vault.course3;
+        Course course4 = vault.course4;
+        Course course5 = vault.course5;
+        return "Studenten heter: " + givenName + " " + surName + " och går kurserna: " + course1.toString() + ", " + course2.toString() + ", " + course3.toString() + ", " + course4.toString() + " och " + course5.toString();
     }
 }

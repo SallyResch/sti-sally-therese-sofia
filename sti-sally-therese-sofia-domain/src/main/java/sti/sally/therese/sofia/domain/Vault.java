@@ -47,4 +47,15 @@ public class Vault {
         allCourses.add(course5);
         return allCourses;
     }
+
+    public static ArrayList<Course> getCourses() {
+        return allCourses;
+    }
+
+    public String toString (){
+        for(Course course:allCourses){
+            return course.getCourseName();
+        }
+        return null;
+    }
 }

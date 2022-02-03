@@ -35,13 +35,13 @@ public class StiServiceImpl implements StiService {
             int persNumberInput = s.nextInt();
             if (persNumberInput == 1345678910) {
                 Student student1 = vault.student1;
-                System.out.println(student1.toString());
+                System.out.println(student1);
             } else if (persNumberInput == 1345678914) {
                 Student student2 = vault.student2;
-                System.out.println(student2.toString());
+                System.out.println(student2);
             } else if (persNumberInput == 1948674673) {
                 Student student3 = vault.student3;
-                System.out.println(student3.toString());
+                System.out.println(student3);
             } else {
                 System.out.println("Studenten finns inte!");
             }
