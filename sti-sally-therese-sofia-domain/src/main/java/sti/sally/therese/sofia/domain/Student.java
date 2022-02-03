@@ -16,21 +16,6 @@ public class Student {
         this.coursesList = coursesList;
     }
 
-    //constructor 2
-    public Student(String givenName, String surName, int persNumber){
-        this.givenName = givenName;
-        this.surName = surName;
-        this.persNumber = persNumber;
-    }
-
-    //constructor 3
-    public Student(int persNumber){
-        this.persNumber = persNumber;
-    }
-    public String getGivenName() {
-        return givenName;
-    }
-
     public void setGivenName(String givenName) {
         this.givenName = givenName;
     }
@@ -64,6 +49,3 @@ public class Student {
         return "Studenten heter: " + givenName + " " + surName + " och går kurserna: " + coursesList;
     }
 }
-/* Student ska kunna hämtas via personnummer och ska då hämta förnamn, efternamn, kursnamn*/
-/* add student (förnamn,efternamn,personnummer,kurser) */
-/* add course student */

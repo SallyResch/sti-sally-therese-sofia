@@ -13,7 +13,7 @@ public class TestStudent {
 
     private Student student;
 
-    @Before
+    /*@Before
     public void before(){
         student = (Student) applicationContext.getBean("student");
     }
@@ -23,5 +23,5 @@ public class TestStudent {
         Student student = new Student("Luna", "Lovegood", 1234567891);
         Assert.assertEquals("Luna", student.getGivenName());
         //Assert.assertNotEquals(nånting här);
-    }
+    }*/
 }

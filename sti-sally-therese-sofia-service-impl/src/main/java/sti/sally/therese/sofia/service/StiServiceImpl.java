@@ -4,7 +4,6 @@ package sti.sally.therese.sofia.service;
 //import com.sun.org.slf4j.internal.LoggerFactory;
 import sti.sally.therese.sofia.domain.Course;
 import sti.sally.therese.sofia.domain.Student;
-import sti.sally.therese.sofia.domain.Teacher;
 import sti.sally.therese.sofia.domain.Vault;
 
 import java.util.ArrayList;
@@ -21,48 +20,55 @@ public class StiServiceImpl implements StiService {
     }
 
     @Override
-    public Student createStudent(String givenName, String surName, int persNummer, ArrayList<Course> coursesList) {
-        Student student = vault.addStudent(new Student(givenName, surName, persNummer, coursesList));
+    public Student createStudent(String givenName, String surName, int persNumber, ArrayList<Course> coursesList) {
+        Student student = new Student(givenName, surName, persNumber, coursesList);
      //   LOGGER.trace("created student successfully");
         return student;
     }
 
     @Override
-    public Student createStudent(String givenName, String surName, int persNummer) {
-        Student student = vault.addStudent(new Student(givenName, surName, persNummer));
-      //  LOGGER.trace("created student successfully");
-        return student;
+    public Student getStudent(int persNumber) {
+        if (persNumber == 1345678910) {
+            Student student1 = vault.student1;
+            student1.toString();
+            return vault.student1;
+        } else if (persNumber == 1345678914) {
+            Student student2 = vault.student2;
+            student2.toString();
+            return vault.student2;
+        } else if (persNumber == 1948674673) {
+            Student student3 = vault.student3;
+            student3.toString();
+            return vault.student3;
+        } else {
+            System.out.println("Studenten finns inte!");
+            return null;
+        }
+
     }
 
     @Override
-    public Student createStudent(int persNummer) {
-        if (persNummer == 1345678910) {
-            //anropa metoden tostring för harry studenten
-        } else if (persNummer == 1345678914) {
-            //anropa metoden tostring för hermione studenten
-        } else if (persNummer == 1948674673) {
-            //anropa metoden tostring för ron studenten
-        } else {
-            System.out.println("Studenten finns inte!");
-        }
+    public Course createCourse ( int yhPoints, int courseCode, String teacher,int hours){
+        //Course course = new Course(yhPoints, courseCode, teacher, hours);
+        //    LOGGER.trace("created student successfully");
+            return null;
+    }
 
-        Student student = vault.addStudent(new Student(persNummer));
-       // LOGGER.trace("created student successfully");
-        return student; /* eller att det händer något annat? */
+    @Override
+    public Course removeCourse (Course course){
+        return null;
     }
 
 
-        @Override
-        public Teacher createTeacher (String givenName, String surName,int persNummer, int salaryPerHour){
-       //     LOGGER.trace("created student successfully");
-            return null /* eller att det händer något annat? */;
-        }
 
-        @Override
-        public Course createCourse ( int yhPoints, int courseCode, String teacher,int hours){
-        //    LOGGER.trace("created student successfully");
-            return null /* eller att det händer något annat? */;
-        }
+        /* @Override
+        public Teacher createTeacher (String givenName, String surName,int persNummer, int salaryPerHour){
+            LOGGER.trace("created student successfully");
+            return null;
+        }*/
+
+
+
 
 
         //vad vill du göra?
