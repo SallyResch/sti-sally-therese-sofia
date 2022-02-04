@@ -4,15 +4,14 @@ package sti.sally.therese.sofia.domain;
 public class Teacher {
     private String givenName;
     private String surName;
-    private int persNummer;
+    private int persNumber;
     private int salaryPerHour;
-    //List of courses
 
 
-    public Teacher(String givenName, String surName, int persNummer, int salaryPerHour) {
+    public Teacher(String givenName, String surName, int persNumber, int salaryPerHour) {
         this.givenName = givenName;
         this.surName = surName;
-        this.persNummer = persNummer;
+        this.persNumber = persNumber;
         this.salaryPerHour = salaryPerHour;
     }
 
@@ -32,12 +31,12 @@ public class Teacher {
         this.surName = surName;
     }
 
-    public int getPersNummer() {
-        return persNummer;
+    public int getPersNumber() {
+        return persNumber;
     }
 
-    public void setPersNummer(int persNummer) {
-        this.persNummer = persNummer;
+    public void setPersNumber(int persNumber) {
+        this.persNumber = persNumber;
     }
 
     public int getSalaryPerHour() {

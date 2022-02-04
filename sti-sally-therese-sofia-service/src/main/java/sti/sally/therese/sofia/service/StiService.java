@@ -15,7 +15,7 @@ public interface StiService {
     void removeCourse(ArrayList<Course> course);
 
     /*
-    Teacher createTeacher(String givenName, String surName, int persNummer, int salaryPerHour);
+    Teacher createTeacher(String givenName, String surName, int persNumber, int salaryPerHour);
     */
 
 }

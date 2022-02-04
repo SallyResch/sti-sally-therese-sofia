@@ -90,7 +90,7 @@ public class StiServiceImpl implements StiService {
 
 
     /* @Override
-    public Teacher createTeacher (String givenName, String surName,int persNummer, int salaryPerHour){
+    public Teacher createTeacher (String givenName, String surName,int persNumber, int salaryPerHour){
          LOGGER.trace("created student successfully");
          return null;
     }*/
